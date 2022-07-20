@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZILipstickViewController" customModule="ZILipstickTryOn" customModuleProvider="target">
+            <connections>
+                <outlet property="lipstickARSCNView" destination="skQ-L4-0AD" id="iiB-M5-Eba"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skQ-L4-0AD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </arscnView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7u-jX-fSo">
+                    <rect key="frame" x="2" y="48" width="54" height="36"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark.circle" catalog="system" symbolScale="large"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="medium">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        </preferredSymbolConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="dismissButton:" destination="-1" eventType="touchUpInside" id="7k2-ro-Vlw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l7u-jX-fSo" secondAttribute="trailing" constant="358" id="8O6-IA-2I4"/>
+                <constraint firstItem="skQ-L4-0AD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A2i-an-aDF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="skQ-L4-0AD" secondAttribute="bottom" id="Zc7-wN-7Ea"/>
+                <constraint firstItem="l7u-jX-fSo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="sse-xJ-dpu"/>
+                <constraint firstItem="skQ-L4-0AD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="xok-Wt-gjZ"/>
+                <constraint firstItem="l7u-jX-fSo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="2" id="yU6-BD-IBB"/>
+                <constraint firstItem="skQ-L4-0AD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zd3-gL-1DN"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
